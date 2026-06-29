@@ -43,6 +43,11 @@ npm run preview:project -- 01-verdict
 
 Open http://localhost:8080/01-verdict/.
 
+## Live Deployment
+
+- Production: https://verdict-virid.vercel.app
+- Vercel inspect: https://vercel.com/aspros-projects-07dbbeb8/verdict/FzKvwn6HMBgtkdPLtDBM4VN2TbDh
+
 ## Smoke Transactions
 
 - set_market_standard: [0x67d120c0...a3293a](https://explorer-studio.genlayer.com/tx/0x67d120c085b2f4da7332ef90376ff1c886ff4f579f100ba653f000a163a3293a)
