@@ -1,6 +1,6 @@
 import { makeReader, write, connectWallet, activeAccount, balanceOf, short, toGen, GEN, fmtErr }
-  from "../shared/genlayer-lite.js";
-import { icon, setIcons } from "../shared/icons.js";
+  from "./shared/genlayer-lite.js";
+import { icon, setIcons } from "./shared/icons.js";
 
 const CONTRACT = "0x80E5C770869fe81317821b30b4a4b852A2D6DEc4";
 const { read } = makeReader(CONTRACT);
