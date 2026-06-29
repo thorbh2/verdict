@@ -1,0 +1,17 @@
+# gltest configuration for VERDICT.
+# Private key read from .env (DEV_PRIVATE_KEY) - throwaway dev account funded
+# from the Studio faucet. Never put a main wallet here.
+networks:
+  default: studionet
+
+  studionet:
+    url: https://studio.genlayer.com/api
+    accounts:
+      - ${DEV_PRIVATE_KEY}
+    from: ${DEV_PRIVATE_KEY}
+
+paths:
+  contracts: contracts
+  artifacts: artifacts
+
+environment: .env
