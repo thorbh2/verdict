@@ -137,7 +137,7 @@ async function openDetail(id) {
   $("drawerBody").innerHTML = `
     <div class="detail-q disp">${esc(mk.question)}</div>
     <div class="src" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);margin-bottom:14px">SOURCE · <a href="${esc(mk.resolution_url)}" target="_blank" rel="noopener">${esc(mk.resolution_url)}</a></div>
-    <div style="font-style:italic;color:var(--ink2);margin-bottom:14px">Rule: ${esc(mk.criteria) || "—"}</div>
+    <div style="font-style:italic;color:var(--ink2);margin-bottom:14px">Rule: ${esc(mk.criteria) || "-"}</div>
     <div class="odds-bar"><div class="odds-yes" style="width:${yp}%">YES ${yp}%</div><div class="odds-no">${100 - yp}% NO</div></div>
     <div class="odds-legend" style="margin-bottom:6px"><span>${toGen(mk.yes_pool)} GEN YES</span><span>${toGen(mk.no_pool)} GEN NO</span></div>
     ${actions}
@@ -176,7 +176,7 @@ async function doClaim(id, st) {
   catch (e) { toast(fmtErr(e), "err", "failed"); btn.disabled = false; btn.textContent = st === 2 ? "Reclaim stake" : "Claim winnings"; }
 }
 
-// Scroll reveals via IntersectionObserver (safe — CSS default is visible,
+// Scroll reveals via IntersectionObserver (safe - CSS default is visible,
 // .reveal adds entrance transition only when .in is applied, never stuck)
 const _io = new IntersectionObserver((es) => es.forEach((e) => {
   if (e.isIntersecting) { e.target.classList.add("in"); _io.unobserve(e.target); }
