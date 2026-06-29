@@ -58,10 +58,10 @@ Open http://localhost:8080/01-verdict/.
 
 ```powershell
 cd C:\Users\aspronim\Desktop\design-skills
-npm run publish:project -- -Project 01-verdict -Repo https://github.com/aspro45/<repo-name>.git
+npm run publish:project -- -Project 01-verdict -Repo https://github.com/thorbh2/verdict.git
 ```
 
-Replace `<repo-name>` with the GitHub repository name before publishing.
+Published repository: https://github.com/thorbh2/verdict.git
 
 ## Keys And Boundaries
 
