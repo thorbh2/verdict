@@ -118,7 +118,7 @@ Verdict ships as a static market desk:
 From the private workspace:
 
 ```powershell
-cd C:\Users\aspronim\Desktop\design-skills
+cd <private-workspace-root>
 npm run preview:start
 npm run preview:project -- 01-verdict
 ```
@@ -132,14 +132,14 @@ http://localhost:8080/01-verdict/
 ## Publish / Redeploy
 
 ```powershell
-cd C:\Users\aspronim\Desktop\design-skills
+cd <private-workspace-root>
 npm run publish:project -- -Project 01-verdict -Repo https://github.com/thorbh2/verdict.git
 ```
 
 Vercel production redeploy from the project folder:
 
 ```powershell
-cd C:\Users\aspronim\Desktop\design-skills\projects\01-verdict
+cd <this-repository-folder>
 npx --yes vercel@latest --prod --yes
 ```
 
